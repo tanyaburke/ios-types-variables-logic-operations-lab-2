@@ -21,6 +21,23 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
+
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var yourGrade:Double = 8.5
+
+var classAverage = (grade1 + grade2 + grade3 + yourGrade) / 4
+print("The class average is \(classAverage)")
+
+if yourGrade > classAverage {
+    print("above average")
+} else{
+    print("below average")
+}
+
+
 ```
 
 ***
@@ -32,8 +49,17 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
-```
 
+let number = 2
+if number % 2 == 0 {
+print("even")
+} else{
+print("odd")
+}
+
+
+
+```
 ***
 ## Question 3
 
@@ -44,6 +70,15 @@ var a = 12
 var b = 3
 
 // code here
+
+if a % b == 0 {
+print("divisible")
+} else{
+print("not divisible")
+}
+
+
+
 ```
 
 ***
@@ -57,6 +92,15 @@ var b = 3
 var c = 2
 
 // your code here
+
+if a == b || a == c || b == c {
+print("At leastn two variables have the same value")
+}else {
+print("All the values are different")
+}
+
+
+
 ```
 
 ***
@@ -69,6 +113,18 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+
+
+
+if eggsAge < 21 && baconAge < 7{
+print("you can cook bacon and eggs")
+}else if baconAge > 7 {
+print("throw out bacon")
+}else if eggsAge > 21 {
+print("throw out eggs")
+}
+
+
 ```
 
 ***
@@ -81,6 +137,13 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+if (year % 4 == 0) && (year % 100 != 0) {
+print ("Leap year!")
+}else {
+print("Not a leap year!")
+}
+
+
 ```
 
 ***
@@ -92,6 +155,17 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
+
+if (randomNum % 2 == 0){
+print("heads")
+}else{
+print("tails")
+}
+
+
+
+
+
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -108,6 +182,22 @@ var c = 3
 var d = 4
 
 // your code here
+
+ switch currentFellow {
+ case(18..<21,_,_):
+     print("not allowed to drink")
+ case(_,6.3,_):
+     print("iOS is awesome")
+ case(_,_,"video games"):
+     print("see you at Pursuit's Game night, bring the drinks")
+ default:
+     print("not a current fellow")
+     
+ }
+
+
+
+
 ```
 
 ***
@@ -121,7 +211,9 @@ b. !(3 > 3)
 c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
-
+```
+A,B,D,E
+```
 ```
 
 ***
@@ -143,7 +235,10 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
+```
+B, C
 
+```
 
 ***
 ## Question 11
@@ -156,6 +251,7 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+B
 ```
 
 
@@ -170,6 +266,7 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+A, B,C,D
 ```
 
 ***
@@ -182,14 +279,16 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
+a += b 25
+b -= c 1
+b * (c + a) 
 (b * c) + a
-b %= a
-b %= c
+b %= a  1
+b %= c  
 
 print(a + b + c)
+
+25
 
 ```
 
@@ -199,13 +298,13 @@ print(a + b + c)
 let div = 11 / 4
 
 ```swift
-1. The value of div is ____________________(or write "div1 will not compile")
+1. The value of div is ____________2________(or write "div1 will not compile")
 
 let div2 = 11.0 / 4.0
-2. The value of div2 is ________________________(or write "div2 will not compile")
+2. The value of div2 is ____2.75____________________(or write "div2 will not compile")
 let isEqual = div == div2
 
-3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+3. The value of isEqual is___________False__________ (or write "isEqual will not compile")
 
 
 ```
@@ -224,6 +323,7 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+A, B, C
 ```
 
 # Bonus 
